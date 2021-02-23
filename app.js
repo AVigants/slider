@@ -43,9 +43,9 @@ const gestureMove = (e) => {
     if (isMouseDown) {
         deltaX = e.pageX - mouseStartPos;
 
-        if (deltaX > document.querySelector('section').offsetWidth / 2) {
+        if (deltaX > document.querySelector('section').offsetWidth / 4) {
             fullSwipe = 'prev';
-        } else if (deltaX < document.querySelector('section').offsetWidth / -2) {
+        } else if (deltaX < document.querySelector('section').offsetWidth / -4) {
             fullSwipe = 'next';
         } else {
             fullSwipe = null;
