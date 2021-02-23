@@ -15,8 +15,9 @@ html, body{
     display: flex;
     justify-content: flex-start;
     background: #eee;
-    border:2px solid deeppink;
-    /* overflow: hidden; */
+    border:1px solid deeppink;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .slider{
     display: flex;
@@ -35,11 +36,15 @@ html, body{
     align-items: center;
     justify-content: center;
 }
-.slider section span{
-    background-color:deeppink;
-    color: #fff;
-    padding: 5px;
+.slider section img{
+    width: 100%;
+    /* height: 100%; */
+    /* background-position: center center;
+    background-repeat: no-repeat; */
+    
+    -webkit-user-drag: none;
     user-select: none;
+
 }
 
 .controls .arrow{
@@ -48,6 +53,8 @@ html, body{
     cursor: pointer;
     border: none;
     background-color: deeppink;
+    padding: 5px 10px;
+    border-radius: 10px;
     color: #fff;
     outline: none;
 }
@@ -69,15 +76,15 @@ html, body{
 }
 
 .controls ul li{
-    width: 10px;
-    height: 10px;
-    border: 2px solid #333;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
     border-radius: 50%;
-    margin: 0 2px;
+    margin: 0 10px;
     cursor: pointer;
     background: transparent;
 }
 
 .controls ul li.selected{
-    background: #333;
+    background: deeppink;
 }
