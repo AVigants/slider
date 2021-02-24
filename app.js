@@ -7,10 +7,10 @@ const totalPanels = document.querySelectorAll('.carousel .slider section').lengt
 
 slider.style.width = `${100* totalPanels}%`; //width of the slider is dependant on the amount of panels (<section>s) we have
 
-for(let i = 1; i< totalPanels; i++){
+for(let i = 1; i< totalPanels; i++){    //set corrent number of buttons for each panel (<section>)
     indicatorParents.innerHTML += `<li></li>`
 }
-
+// variable declaration
 let MultiplePanelsToSkip = null;
 let isSwipingEnabled = true;
 let isGestureActive = false;
