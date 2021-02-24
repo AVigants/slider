@@ -1,11 +1,15 @@
 html, body{
     margin: 0;
+    width: 100%;
+    height: 100%;
     background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
     width: 90%;
-    margin: 10px auto;
     height: 500px;
 }
 .carousel{
@@ -23,7 +27,7 @@ html, body{
     display: flex;
     height: 100%;
     transition: all 0.3s;
-    width: 400%;
+    /* width: 400%; */
     flex-shrink: 0;
     touch-action: none;
 }
