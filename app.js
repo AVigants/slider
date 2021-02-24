@@ -82,7 +82,6 @@ document.querySelectorAll('.controls li').forEach((indicator, index) => {
             loadContent(Math.sign(deltaPanels))
             translate(deltaPanels)
 
-            //todo - what this-------------
             if (deltaPanels > 1 || deltaPanels < -1) {
                 MultiplePanelsToSkip = deltaPanels;
             }
@@ -153,7 +152,7 @@ function gestureEnd(e) {
         }
         setTimeout(() => {
             enableSwiping();
-        }, 300); //todo set to transitionend block??
+        }, 300);
     }
 }
 
